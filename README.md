@@ -1,5 +1,9 @@
-# Technical Documentation Page project (freeCodeCamp)
+# Responsive Web Design | Build a Technical Documentation Page
 
-## HTML: HyperText Markup Language
+## Objective
 
-Responsive Web Design Project: Build a Technical Documentation Page
+Build a functional technical documentation page
+
+## Git Basics Documentation
+
+In this section you will learn the basics of Git
