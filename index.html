@@ -4,90 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Git Basics | Documentation Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav id="nav-bar">
+    <nav id="navbar">
         <header class="nav-title">
-            <h1>Git Documentation</h1>
-            <a href="#introduction" class="nav-link">Introduction</a>
-            <a href="#git-basics" class="nav-link">Git Basics</a>
-            <a href="#cheatsheet" class="nav-link">Cheatsheet</a>
-            <a href="#conclusion" class="nav-link">Conclusion</a>
-            <a href="#before-you-start" class="nav-link">Before you start!</a>
-            <a href="#reference" class="nav-link">Reference</a>
+            <div class="title">
+                <h1>Git</h1>
+                <h2>Documentation</h2>
+            </div>
+            <div class="links">
+                <a class="nav-link" href="#Introduction">Introduction</a>
+                <a class="nav-link" href="#Git_basics">Git basics</a>
+                <a class="nav-link" href="#Cheatsheet">Cheatsheet</a>
+                <a class="nav-link" href="#Conclusion">Conclusion</a>
+                <a class="nav-link" href="#Before_you_start!">Before you start!</a>
+                <a class="nav-link" href="#Reference">Reference</a>
+            </div>
         </header>
     </nav>
     <main id="main-doc">
-        <section class="main-section" id="introduction">
-            <header id="introduction">
-                <h2>Introduction</h2>
-            </header>
-            <p>
-                Git is like a really <b>epic save button</b> for your files and directories. Officially, Git is a version control system.
-            </p>
-            <p>
-                A <i>save</i> in a text editor records all of the words in a document as a single file. You are only ever given one record of the file, such as <code>essay.doc</code>, unless you make duplicate copies (which is difficult to remember to do and keep track of):
-            </p>
-            <code>
-                essay-draft1.doc, essay-draft2.doc, essay-final.doc
-            </code>
-            <p>
-                However, a <i>save</i> in Git records differences in the files and folders AND keeps a <b>historical record of each save</b>. This feature is a game changer. As an individual developer, Git enables you to review how your project grows and to easily look at or restore file states from the past. Once connected to a network, Git allows you to push your project to GitHub for sharing and collaborating with other developers.
-            </p>
-            <p>
-                While Git works on your local machine, GitHub is a <i>remote</i> storage facility on the web for all your coding projects. This means that by learning Git, you will get to showcase your portfolio on GitHub! This is really important because almost all software development companies consider using Git to be an <b>essential skill</b> for modern web developers. Having a GitHub portfolio will provide proof to future potential employers as to what you are capable of.
-            </p>
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <article>
+                <p>
+                    Git is like a really <b>epic save button</b> for your files and directories. Officially, Git is a version control system.
+                </p>
+                <p>
+                    A <i>save</i> in a text editor records all of the words in a document as a single file. You are only ever given one record of the file, such as <code>essay.doc</code>, unless you make duplicate copies (which is difficult to remember to do and keep track of):
+                </p>
+                <code>
+                    essay-draft1.doc, essay-draft2.doc, essay-final.doc
+                </code>
+                <p>
+                    However, a <i>save</i> in Git records differences in the files and folders AND keeps a <b>historical record of each save</b>. This feature is a game changer. As an individual developer, Git enables you to review how your project grows and to easily look at or restore file states from the past. Once connected to a network, Git allows you to push your project to GitHub for sharing and collaborating with other developers.
+                </p>
+                <p>
+                    While Git works on your local machine, GitHub is a <i>remote</i> storage facility on the web for all your coding projects. This means that by learning Git, you will get to showcase your portfolio on GitHub! This is really important because almost all software development companies consider using Git to be an <b>essential skill</b> for modern web developers. Having a GitHub portfolio will provide proof to future potential employers as to what you are capable of.
+                </p>
+            </article>
         </section>
-        <section class="main-section" id="git-basics">
-            <header id="git-basics">
-                <h2>Git Basics</h2>
-            </header>
-            <p>
-                We refer to these commands as the <b>basic Git workflow</b>. When you’re using Git, these are the commands that you’ll use 70-80% of the time, so if you can get these down, you’ll be more than halfway done mastering Git!
-            </p>
+        <section class="main-section" id="Git_basics">
+            <header>Git basics</header>
+            <article>
+                <p>
+                    We refer to these commands as the <b>basic Git workflow</b>. When you’re using Git, these are the commands that you’ll use 70-80% of the time, so if you can get these down, you’ll be more than halfway done mastering Git!
+                </p>
+            </article>
         </section>
-        <section class="main-section" id="cheatsheet">
-            <header id="cheatsheet">
-                <h2>Cheatsheet</h2>
-            </header>
-            <p>This is a reference list of the most commonly used Git commands. (You might consider bookmarking this handy page.) Try to familiarize yourself with the commands so that you can eventually remember them all:</p>
-                <ul>
-                    <li>Commands related to a remote repository:</li>
+        <section class="main-section" id="Cheatsheet">
+            <header>Cheatsheet</header>
+            <article>
+                <p>This is a reference list of the most commonly used Git commands. (You might consider bookmarking this handy page.) Try to familiarize yourself with the commands so that you can eventually remember them all:</p>
                     <ul>
-                        <li><code>git clone git@github.com:USER-NAME/REPOSITORY-NAME.git or git clone https://github.com/user-name/repository-name.git</code></li>
-                        <li><code>git push origin main</code></li>
+                        <li>Commands related to a remote repository:</li>
+                        <ul>
+                            <li><code>git clone git@github.com:USER-NAME/REPOSITORY-NAME.git or git clone https://github.com/user-name/repository-name.git</code></li>
+                            <li><code>git push origin main</code></li>
+                        </ul>
                     </ul>
-                </ul>
-                <ul>
-                    <li>Commands related to workflow:</li>
                     <ul>
-                        <li><code>git add .</code></li>
-                        <li><code>git commit -m "A message describing what you have done to make this snapshot different"</code></li>
+                        <li>Commands related to workflow:</li>
+                        <ul>
+                            <li><code>git add .</code></li>
+                            <li><code>git commit -m "A message describing what you have done to make this snapshot different"</code></li>
+                        </ul>
                     </ul>
-                </ul>
-                <ul>
-                    <li>Commands related to checking status or log history</li>
                     <ul>
-                        <li><code>git status</code></li>
-                        <li><code>git log</code></li>
+                        <li>Commands related to checking status or log history</li>
+                        <ul>
+                            <li><code>git status</code></li>
+                            <li><code>git log</code></li>
+                        </ul>
                     </ul>
-                </ul>
+                </article>
         </section>
-        <section class="main-section" id="conclusion">
-            <header id="conclusion">
-                <h2>Conclusion</h2>
-            </header>
-            <p>
-                You may not feel completely comfortable with Git at this point, which is normal. It’s a skill that you will get more comfortable with as you use it.
-            </p>
-            <p>
-                The main thing to take away from this lesson is the <b>basic workflow</b>. The commands you’ve learned here are the ones you will be using the most often with Git.
-            </p>
+        <section class="main-section" id="Conclusion">
+            <header>Conclusion</header>
+            <article>
+                <p>
+                    You may not feel completely comfortable with Git at this point, which is normal. It’s a skill that you will get more comfortable with as you use it.
+                </p>
+                <p>
+                    The main thing to take away from this lesson is the <b>basic workflow</b>. The commands you’ve learned here are the ones you will be using the most often with Git.
+                </p>
+            </article>
         </section>
-        <section class="main-section" id="before-you-start">
-            <header id="before-you-start">
-                <h2>Before you start!</h2>
+        <section class="main-section" id="Before_you_start!">
+            <header>Before you start!</header>
+            <article>
                 <ul>
                     <li>
                         <p>
@@ -113,15 +119,15 @@
                         <p>For more information on the change from <code>master</code> to <code>main</code> see <a href="https://github.com/github/renaming">GitHub's Renaming Repository.</a></p>
                     </li>
                 </ul>
-            </header>
+            </article>
         </section>
-        <section class="main-section" id="reference">
-            <header id="reference">
-                <h2>Reference</h2>
+        <section class="main-section" id="Reference">
+            <header>Reference</header>
+            <article>
                 <ul>
                     <li>All the documentation in this page is taken from <a href="https://www.theodinproject.com/home">Git Basics | The Odin Project</a></li>
                 </ul>
-            </header>
+            </article>
         </section>
     </main>
 
